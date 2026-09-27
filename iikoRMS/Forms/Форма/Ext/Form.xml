@@ -1483,6 +1483,9 @@
 													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="ВидыОплатыВидОплатыКонтекстноеМеню" id="119"/>
 													<ExtendedTooltip name="ВидыОплатыВидОплатыExtendedTooltip" id="916"/>
+													<Events>
+														<Event name="OnChange">ВидыОплатыВидОплатыПриИзменении</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -1796,6 +1799,9 @@
 													<AutoEditMode>true</AutoEditMode>
 													<ContextMenu name="ВидыОплатыСчетаВидОплатыКонтекстноеМеню" id="149"/>
 													<ExtendedTooltip name="ВидыОплатыСчетаВидОплатыExtendedTooltip" id="937"/>
+													<Events>
+														<Event name="OnChange">ВидыОплатыСчетаВидОплатыПриИзменении</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</Table>

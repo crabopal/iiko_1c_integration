@@ -6,21 +6,21 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>4c31c2d7-916e-40b2-b6f1-5023119f0f7d</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.Загрузка" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.ЗагрузкаДокументовИзIiko" category="Object">
 				<xr:TypeId>59a5e7f8-634d-427a-a6bb-1fc21bd2d5fc</xr:TypeId>
 				<xr:ValueId>8783b0c1-e7be-4fe3-9297-65e9fe87e4df</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Загрузка</Name>
+			<Name>ЗагрузкаДокументовИзIiko</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузка</v8:content>
+					<v8:content>Загрузка документов из iiko</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment>Загрузка данных из iiko</Comment>
-			<DefaultForm>ExternalDataProcessor.Загрузка.Form.Форма</DefaultForm>
+			<Comment>Загрузка документов из iiko в 1С Бухгалтерия 3.0. </Comment>
+			<DefaultForm>ExternalDataProcessor.ЗагрузкаДокументовИзIiko.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
@@ -930,11 +930,11 @@
 			</Attribute>
 			<TabularSection uuid="f4e5f708-6941-46c8-a6a0-28991701f1ca">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.Контрагенты" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.Контрагенты" category="TabularSection">
 						<xr:TypeId>3681081a-3497-43eb-9f48-9cae11b56043</xr:TypeId>
 						<xr:ValueId>7412523f-90c5-494a-b5b8-ccef2a755db7</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.Контрагенты" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.Контрагенты" category="TabularSectionRow">
 						<xr:TypeId>61cb72d5-6bdd-43d8-bd65-f23a4c68eff4</xr:TypeId>
 						<xr:ValueId>45df37c7-1bcc-4479-a0a0-bc71fbc001d7</xr:ValueId>
 					</xr:GeneratedType>
@@ -1261,11 +1261,11 @@
 			</TabularSection>
 			<TabularSection uuid="aaaec6ad-e2ed-4fab-9d0a-acb741879c46">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.БухгалтерскаяКатегория" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.БухгалтерскаяКатегория" category="TabularSection">
 						<xr:TypeId>1b1c5260-fb95-4896-9b56-8a9a95258a89</xr:TypeId>
 						<xr:ValueId>af11e3f7-28a6-4c48-a0ee-7f8a82ef522f</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.БухгалтерскаяКатегория" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.БухгалтерскаяКатегория" category="TabularSectionRow">
 						<xr:TypeId>e4d91f80-3c5a-4e30-b0bb-e59fa9739041</xr:TypeId>
 						<xr:ValueId>f5835db2-9c5f-408d-b5b8-045176150dcb</xr:ValueId>
 					</xr:GeneratedType>
@@ -1432,6 +1432,42 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
+					<Attribute uuid="623bc0b1-dc3e-4b7e-9737-e613ccb2f567">
+						<Properties>
+							<Name>ВидНоменклатуры</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Вид номенклатуры</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ВидыНоменклатуры</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillFromFillingValue>false</FillFromFillingValue>
+							<FillValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+						</Properties>
+					</Attribute>
 					<Attribute uuid="3f58c269-5aeb-4385-8496-c697c40a812c">
 						<Properties>
 							<Name>Группа1С</Name>
@@ -1459,46 +1495,6 @@
 							<FillValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="9f611ab4-5be0-40e2-8b6f-f89c3345eb13">
-						<Properties>
-							<Name>ВидНоменклатуры</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Вид номенклатуры</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>10</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
 							<ChoiceParameters/>
 							<QuickChoice>Auto</QuickChoice>
@@ -1552,11 +1548,11 @@
 			</TabularSection>
 			<TabularSection uuid="ebb7a349-fc02-4d4b-bee5-72c5e486b2f9">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.Номенклатура" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.Номенклатура" category="TabularSection">
 						<xr:TypeId>6cd8259f-92fc-4282-aeac-fc9f33e30541</xr:TypeId>
 						<xr:ValueId>1b4eba7c-692d-4ed1-8859-7447d415b23c</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.Номенклатура" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.Номенклатура" category="TabularSectionRow">
 						<xr:TypeId>9596fd7c-ba1f-41f4-9b8b-1e97769d0e04</xr:TypeId>
 						<xr:ValueId>c6e2dc64-cf18-4515-9d02-b324a99bd635</xr:ValueId>
 					</xr:GeneratedType>
@@ -1839,11 +1835,11 @@
 			</TabularSection>
 			<TabularSection uuid="785ea0f9-da03-408f-a75f-7273f03d6d1f">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.Склады" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.Склады" category="TabularSection">
 						<xr:TypeId>6d73735c-b49e-414c-bf82-78096601b0a3</xr:TypeId>
 						<xr:ValueId>b760c434-2e88-4cac-8f15-1bf91ff628d9</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.Склады" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.Склады" category="TabularSectionRow">
 						<xr:TypeId>bae6a8ea-a809-4b6f-a03a-61cef81464b2</xr:TypeId>
 						<xr:ValueId>8c6963ba-42e6-4672-9c4f-549c96a01d28</xr:ValueId>
 					</xr:GeneratedType>
@@ -1903,7 +1899,7 @@
 							<Type>
 								<v8:Type>xs:string</v8:Type>
 								<v8:StringQualifiers>
-									<v8:Length>100</v8:Length>
+									<v8:Length>0</v8:Length>
 									<v8:AllowedLength>Variable</v8:AllowedLength>
 								</v8:StringQualifiers>
 							</Type>
@@ -1981,11 +1977,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>10</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>cfg:CatalogRef.Склады</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -2090,11 +2082,11 @@
 			</TabularSection>
 			<TabularSection uuid="2cb064d6-6d41-4f7f-9bd5-c402f74fcfa1">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.Докум" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.Докум" category="TabularSection">
 						<xr:TypeId>d9bf5db9-0701-4c20-8253-25c37c75130a</xr:TypeId>
 						<xr:ValueId>767fc11d-0f77-4466-bf45-08fc67897b76</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.Докум" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.Докум" category="TabularSectionRow">
 						<xr:TypeId>000077af-ff07-4091-a229-e6df460fe2e0</xr:TypeId>
 						<xr:ValueId>e8c21b97-ddc0-47f3-9592-f569ffa961b3</xr:ValueId>
 					</xr:GeneratedType>
@@ -2649,11 +2641,11 @@
 			</TabularSection>
 			<TabularSection uuid="eaf37dc4-9db2-44fa-bbe7-2fbc96c4e025">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.ВидыОплаты" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.ВидыОплаты" category="TabularSection">
 						<xr:TypeId>b8f8f475-170c-413d-b6cb-3a99c3fe6a51</xr:TypeId>
 						<xr:ValueId>df67b217-f620-427f-9421-2877ef19f7af</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.ВидыОплаты" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.ВидыОплаты" category="TabularSectionRow">
 						<xr:TypeId>2f3d94e6-b2bd-4b22-8d43-423b4781f428</xr:TypeId>
 						<xr:ValueId>37130a20-5ce0-406a-bd60-8e091eeb016b</xr:ValueId>
 					</xr:GeneratedType>
@@ -2871,11 +2863,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>10</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>cfg:CatalogRef.ВидыОплатОрганизаций</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -2904,11 +2892,11 @@
 			</TabularSection>
 			<TabularSection uuid="431effc4-563a-4d38-b218-20bfc837d798">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.Группировка" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.Группировка" category="TabularSection">
 						<xr:TypeId>ccb4e8e2-351b-427c-b72d-86a720de9262</xr:TypeId>
 						<xr:ValueId>39398c4a-dcf6-4997-82bc-5f1143c8f02a</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.Группировка" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.Группировка" category="TabularSectionRow">
 						<xr:TypeId>1e87330d-eadd-4a26-bdb8-49aad470efd7</xr:TypeId>
 						<xr:ValueId>ed877a03-a017-4ce6-9edb-5fe91c7f0b39</xr:ValueId>
 					</xr:GeneratedType>
@@ -3195,11 +3183,11 @@
 			</TabularSection>
 			<TabularSection uuid="17e0fa58-815b-4926-8c8b-3d9634596bb8">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.ВидыОплатыСчета" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.ВидыОплатыСчета" category="TabularSection">
 						<xr:TypeId>5df5e179-daf2-4f24-ae5a-8336ba674568</xr:TypeId>
 						<xr:ValueId>e6dc9d77-ea7b-4ba8-ab5e-943714ba35fe</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.ВидыОплатыСчета" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.ВидыОплатыСчета" category="TabularSectionRow">
 						<xr:TypeId>95bc37f9-84cf-4176-8a46-da4e0c3c9f97</xr:TypeId>
 						<xr:ValueId>bd018cca-bd63-44d6-9637-29b95d60e0a3</xr:ValueId>
 					</xr:GeneratedType>
@@ -3377,11 +3365,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>10</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>cfg:CatalogRef.ВидыОплатОрганизаций</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -3410,11 +3394,11 @@
 			</TabularSection>
 			<TabularSection uuid="2dcad910-1ec5-4e64-82cf-59934270499e">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.ФизЛица" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.ФизЛица" category="TabularSection">
 						<xr:TypeId>841a0b4a-0dcd-4c9a-8001-ed8f9dbafe6e</xr:TypeId>
 						<xr:ValueId>e8a033f5-b3d9-4eaf-9e44-fd9efe7462b1</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.ФизЛица" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.ФизЛица" category="TabularSectionRow">
 						<xr:TypeId>9ccf9609-a85c-46a7-986f-6fdecda76cb4</xr:TypeId>
 						<xr:ValueId>9932381c-22ac-4d67-9801-8752df6cb857</xr:ValueId>
 					</xr:GeneratedType>
@@ -3621,11 +3605,11 @@
 			</TabularSection>
 			<TabularSection uuid="b468324f-8fb1-4297-becb-515ca63228b3">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.Загрузка.Статьи" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаДокументовИзIiko.Статьи" category="TabularSection">
 						<xr:TypeId>00e993c9-8765-4371-8080-86ec473f5acc</xr:TypeId>
 						<xr:ValueId>b50cb926-d4e2-4545-afee-0f0803e9161d</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.Загрузка.Статьи" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаДокументовИзIiko.Статьи" category="TabularSectionRow">
 						<xr:TypeId>b757da2b-8db7-4f0f-b3be-abc44ee5ef03</xr:TypeId>
 						<xr:ValueId>2c1f4b21-83b8-4487-85a2-441d42210335</xr:ValueId>
 					</xr:GeneratedType>
@@ -3723,11 +3707,8 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>10</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>cfg:CatalogRef.ПрочиеДоходыИРасходы</v8:Type>
+								<v8:Type>cfg:CatalogRef.СтатьиЗатрат</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -3740,7 +3721,7 @@
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
 							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
+							<FillValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
@@ -3763,11 +3744,7 @@
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>10</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>cfg:ChartOfAccountsRef.Хозрасчетный</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -3780,7 +3757,7 @@
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
 							<FillFromFillingValue>false</FillFromFillingValue>
-							<FillValue xsi:type="xs:string"/>
+							<FillValue xsi:nil="true"/>
 							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
